@@ -1,0 +1,49 @@
+<style>
+    a{
+      color: white;
+    }
+    h2{
+      color: white;
+    }
+    h1{
+      text-align: center;
+      color: white;
+    }
+  </style>
+  
+  <div class="container">
+  
+  
+    <ul class="nav nav-tabs"> 
+      <li class="nav-item">
+          <h2>Room 1</h2>
+      </li>
+
+
+      <li class="nav-item">
+          <a class="nav-link" routerLink="/room1temp">Temprature</a>
+      </li>
+  
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/room1humidity">Humidity</a>
+      </li>
+  
+      
+  
+  
+    </ul>  
+    
+    <div>
+      <router-outlet></router-outlet>
+    </div>
+  
+  </div>
+
+  <div style="display: block">
+      <h1>"Humidity Graph"</h1>
+  <canvas baseChart
+          [datasets]="linechartData"
+          [options]="linechartOptions"
+          [labels]="linechartLabels"
+          [chartType]="linechartType"></canvas>
+</div>

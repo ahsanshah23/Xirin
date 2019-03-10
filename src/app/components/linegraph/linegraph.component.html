@@ -1,0 +1,15 @@
+<style>
+  h1{
+    text-align: center;
+    color: white;
+  }
+</style>
+
+<div style="display: block">
+        <h1>"Humidity Graph"</h1>
+    <canvas baseChart
+            [datasets]="linechartData"
+            [options]="linechartOptions"
+            [labels]="linechartLabels"
+            [chartType]="linechartType"></canvas>
+  </div>
