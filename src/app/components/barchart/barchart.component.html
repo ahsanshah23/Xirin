@@ -1,0 +1,18 @@
+<style>
+  h1{
+    text-align: center;
+    color: white;
+  }
+</style>
+
+<div>
+    <h1>"Temprature Graph"</h1>
+  <div style="display: block">
+    <canvas baseChart
+          [datasets]="barChartData"
+          [labels]="barChartLabels"
+          [options]="barChartOptions"
+          [legend]="barChartLegend"
+          [chartType]="barChartType"></canvas>
+  </div>
+</div>
